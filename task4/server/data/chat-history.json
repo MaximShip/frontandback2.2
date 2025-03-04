@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "userId": "user_m7uxp8otxjd",
+      "userName": "Пользователь 314",
+      "sender": "user",
+      "text": "sdfsdf",
+      "timestamp": "2025-03-04T20:21:30.144Z"
+    },
+    {
+      "userId": "admin_m7uxp8nn494",
+      "userName": "Администратор",
+      "sender": "admin",
+      "text": "fsdfsf",
+      "timestamp": "2025-03-04T20:21:36.641Z"
+    }
+  ]
+}

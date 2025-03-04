@@ -1,0 +1,28 @@
+{
+  "name": "e-commerce-app",
+  "version": "1.0.0",
+  "description": "Simple e-commerce application with catalog and admin panel",
+  "main": "index.js",
+  "scripts": {
+    "start:catalog": "node server/catalog-server.js",
+    "start:admin": "node server/admin-server.js",
+    "start": "concurrently \"npm run start:catalog\" \"npm run start:admin\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "e-commerce",
+    "catalog",
+    "admin",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
