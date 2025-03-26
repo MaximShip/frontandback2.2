@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT авторизация</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JWT авторизация</h1>
+        
+        <div id="registerForm">
+            <h2>Регистрация</h2>
+            <div class="form-group">
+                <label for="registerUsername">Логин:</label>
+                <input type="text" id="registerUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Пароль:</label>
+                <input type="password" id="registerPassword" required>
+            </div>
+            <button onclick="register()">Зарегестрироваться</button>
+        </div>
+
+        <div id="loginForm">
+            <h2>Вход</h2>
+            <div class="form-group">
+                <label for="loginUsername">Логин:</label>
+                <input type="text" id="loginUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Пароль:</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button onclick="login()">Войти</button>
+        </div>
+
+        <div id="protectedContent" class="protected-content">
+            <h2>Защищенная информация</h2>
+            <p id="protectedData"></p>
+            <button onclick="getProtectedData()">Обновить</button>
+            <button onclick="logout()" style="background-color: #f44336;">Выйти</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
